@@ -1,0 +1,6 @@
+framework module Pods_NBA_Team_Selection_App {
+  umbrella header "Pods-NBA Team Selection App-umbrella.h"
+
+  export *
+  module * { export * }
+}

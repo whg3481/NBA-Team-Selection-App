@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E1A232989D0CC43D9A418E8 /* Pods_NBA_Team_Selection_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04BA01396F80420A310FF25 /* Pods_NBA_Team_Selection_AppTests.framework */; };
+		6538427DF5E668B46CDC5C06 /* Pods_NBA_Team_Selection_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AC50BF6D50DA6983F790D5 /* Pods_NBA_Team_Selection_App.framework */; };
+		B2513A091DD58F24009EED88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513A081DD58F24009EED88 /* AppDelegate.swift */; };
+		B2513A0E1DD58F24009EED88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2513A0C1DD58F24009EED88 /* Main.storyboard */; };
+		B2513A101DD58F24009EED88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2513A0F1DD58F24009EED88 /* Assets.xcassets */; };
+		B2513A131DD58F24009EED88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2513A111DD58F24009EED88 /* LaunchScreen.storyboard */; };
+		B2513A1E1DD58F24009EED88 /* NBA_Team_Selection_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513A1D1DD58F24009EED88 /* NBA_Team_Selection_AppTests.swift */; };
+		B2513A2B1DD58F2E009EED88 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2513A2A1DD58F2E009EED88 /* CloudKit.framework */; };
+		B2513A2D1DD5910A009EED88 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513A2C1DD5910A009EED88 /* TeamsTableViewController.swift */; };
+		B2513A9F1DD8ED3F009EED88 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513A9E1DD8ED3F009EED88 /* TeamsViewController.swift */; };
+		B2513AA01DD8ED3F009EED88 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513A9E1DD8ED3F009EED88 /* TeamsViewController.swift */; };
+		B2513AD51DDA4C97009EED88 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2513AD41DDA4C97009EED88 /* Team.swift */; };
+		B2B390561DDB9AD100C7F3AD /* MyPlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B390551DDB9AD100C7F3AD /* MyPlayersTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2513A1A1DD58F24009EED88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B25139FD1DD58F24009EED88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2513A041DD58F24009EED88;
+			remoteInfo = "NBA Team Selection App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		494E6AE7F0DA50274D794F3B /* Pods-NBA Team Selection App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBA Team Selection App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBA Team Selection App/Pods-NBA Team Selection App.debug.xcconfig"; sourceTree = "<group>"; };
+		8E8E916152206C1B0CC2F4F7 /* Pods-NBA Team Selection App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBA Team Selection App.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBA Team Selection App/Pods-NBA Team Selection App.release.xcconfig"; sourceTree = "<group>"; };
+		A7AC50BF6D50DA6983F790D5 /* Pods_NBA_Team_Selection_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBA_Team_Selection_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04BA01396F80420A310FF25 /* Pods_NBA_Team_Selection_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBA_Team_Selection_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2513A051DD58F24009EED88 /* NBA Team Selection App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Team Selection App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2513A081DD58F24009EED88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2513A0D1DD58F24009EED88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2513A0F1DD58F24009EED88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2513A121DD58F24009EED88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2513A141DD58F24009EED88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2513A191DD58F24009EED88 /* NBA Team Selection AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NBA Team Selection AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2513A1D1DD58F24009EED88 /* NBA_Team_Selection_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBA_Team_Selection_AppTests.swift; sourceTree = "<group>"; };
+		B2513A1F1DD58F24009EED88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2513A281DD58F2C009EED88 /* NBA Team Selection App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NBA Team Selection App.entitlements"; sourceTree = "<group>"; };
+		B2513A2A1DD58F2E009EED88 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B2513A2C1DD5910A009EED88 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsTableViewController.swift; path = ../TeamsTableViewController.swift; sourceTree = "<group>"; };
+		B2513A9E1DD8ED3F009EED88 /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsViewController.swift; path = ../TeamsViewController.swift; sourceTree = "<group>"; };
+		B2513AD41DDA4C97009EED88 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B2B390551DDB9AD100C7F3AD /* MyPlayersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayersTableViewController.swift; sourceTree = "<group>"; };
+		D4C16FF5E99AC2D7FD5EC682 /* Pods-NBA Team Selection AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBA Team Selection AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBA Team Selection AppTests/Pods-NBA Team Selection AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0F9455CD2659ABC792BABB8 /* Pods-NBA Team Selection AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBA Team Selection AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBA Team Selection AppTests/Pods-NBA Team Selection AppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2513A021DD58F24009EED88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2513A2B1DD58F2E009EED88 /* CloudKit.framework in Frameworks */,
+				6538427DF5E668B46CDC5C06 /* Pods_NBA_Team_Selection_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2513A161DD58F24009EED88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1A232989D0CC43D9A418E8 /* Pods_NBA_Team_Selection_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B742242EC83134C3BE2143 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				494E6AE7F0DA50274D794F3B /* Pods-NBA Team Selection App.debug.xcconfig */,
+				8E8E916152206C1B0CC2F4F7 /* Pods-NBA Team Selection App.release.xcconfig */,
+				D4C16FF5E99AC2D7FD5EC682 /* Pods-NBA Team Selection AppTests.debug.xcconfig */,
+				E0F9455CD2659ABC792BABB8 /* Pods-NBA Team Selection AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B25139FC1DD58F24009EED88 = {
+			isa = PBXGroup;
+			children = (
+				B2513A071DD58F24009EED88 /* NBA Team Selection App */,
+				B2513A1C1DD58F24009EED88 /* NBA Team Selection AppTests */,
+				B2513A061DD58F24009EED88 /* Products */,
+				B2513A291DD58F2E009EED88 /* Frameworks */,
+				19B742242EC83134C3BE2143 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B2513A061DD58F24009EED88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2513A051DD58F24009EED88 /* NBA Team Selection App.app */,
+				B2513A191DD58F24009EED88 /* NBA Team Selection AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2513A071DD58F24009EED88 /* NBA Team Selection App */ = {
+			isa = PBXGroup;
+			children = (
+				B2513A9E1DD8ED3F009EED88 /* TeamsViewController.swift */,
+				B2513A9D1DD8ECFD009EED88 /* Controllers */,
+				B2513A281DD58F2C009EED88 /* NBA Team Selection App.entitlements */,
+				B2513A081DD58F24009EED88 /* AppDelegate.swift */,
+				B2513A0C1DD58F24009EED88 /* Main.storyboard */,
+				B2513A0F1DD58F24009EED88 /* Assets.xcassets */,
+				B2513A111DD58F24009EED88 /* LaunchScreen.storyboard */,
+				B2513A141DD58F24009EED88 /* Info.plist */,
+			);
+			path = "NBA Team Selection App";
+			sourceTree = "<group>";
+		};
+		B2513A1C1DD58F24009EED88 /* NBA Team Selection AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2513A1D1DD58F24009EED88 /* NBA_Team_Selection_AppTests.swift */,
+				B2513A1F1DD58F24009EED88 /* Info.plist */,
+			);
+			path = "NBA Team Selection AppTests";
+			sourceTree = "<group>";
+		};
+		B2513A291DD58F2E009EED88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2513A2A1DD58F2E009EED88 /* CloudKit.framework */,
+				A7AC50BF6D50DA6983F790D5 /* Pods_NBA_Team_Selection_App.framework */,
+				B04BA01396F80420A310FF25 /* Pods_NBA_Team_Selection_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2513A9D1DD8ECFD009EED88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2513A2C1DD5910A009EED88 /* TeamsTableViewController.swift */,
+				B2513AD41DDA4C97009EED88 /* Team.swift */,
+				B2B390551DDB9AD100C7F3AD /* MyPlayersTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2513A041DD58F24009EED88 /* NBA Team Selection App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2513A221DD58F24009EED88 /* Build configuration list for PBXNativeTarget "NBA Team Selection App" */;
+			buildPhases = (
+				F3018D1B233564C7ED775B47 /* [CP] Check Pods Manifest.lock */,
+				B2513A011DD58F24009EED88 /* Sources */,
+				B2513A021DD58F24009EED88 /* Frameworks */,
+				B2513A031DD58F24009EED88 /* Resources */,
+				1A0B3192102F7273D6E14369 /* [CP] Embed Pods Frameworks */,
+				78FC143DDC9024D7923E5B08 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NBA Team Selection App";
+			productName = "NBA Team Selection App";
+			productReference = B2513A051DD58F24009EED88 /* NBA Team Selection App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2513A181DD58F24009EED88 /* NBA Team Selection AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2513A251DD58F24009EED88 /* Build configuration list for PBXNativeTarget "NBA Team Selection AppTests" */;
+			buildPhases = (
+				5F9C0BB029CA94915D8CE8EB /* [CP] Check Pods Manifest.lock */,
+				B2513A151DD58F24009EED88 /* Sources */,
+				B2513A161DD58F24009EED88 /* Frameworks */,
+				B2513A171DD58F24009EED88 /* Resources */,
+				42CCEA01E028130DFE6B3025 /* [CP] Embed Pods Frameworks */,
+				3F25B86D15945747D348E91D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2513A1B1DD58F24009EED88 /* PBXTargetDependency */,
+			);
+			name = "NBA Team Selection AppTests";
+			productName = "NBA Team Selection AppTests";
+			productReference = B2513A191DD58F24009EED88 /* NBA Team Selection AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B25139FD1DD58F24009EED88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Will Garner";
+				TargetAttributes = {
+					B2513A041DD58F24009EED88 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SK2ZM3X36D;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					B2513A181DD58F24009EED88 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SK2ZM3X36D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B2513A041DD58F24009EED88;
+					};
+				};
+			};
+			buildConfigurationList = B2513A001DD58F24009EED88 /* Build configuration list for PBXProject "NBA Team Selection App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B25139FC1DD58F24009EED88;
+			productRefGroup = B2513A061DD58F24009EED88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2513A041DD58F24009EED88 /* NBA Team Selection App */,
+				B2513A181DD58F24009EED88 /* NBA Team Selection AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2513A031DD58F24009EED88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2513A131DD58F24009EED88 /* LaunchScreen.storyboard in Resources */,
+				B2513A101DD58F24009EED88 /* Assets.xcassets in Resources */,
+				B2513A0E1DD58F24009EED88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2513A171DD58F24009EED88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0B3192102F7273D6E14369 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBA Team Selection App/Pods-NBA Team Selection App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F25B86D15945747D348E91D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBA Team Selection AppTests/Pods-NBA Team Selection AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42CCEA01E028130DFE6B3025 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBA Team Selection AppTests/Pods-NBA Team Selection AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F9C0BB029CA94915D8CE8EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78FC143DDC9024D7923E5B08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBA Team Selection App/Pods-NBA Team Selection App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3018D1B233564C7ED775B47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2513A011DD58F24009EED88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2513A2D1DD5910A009EED88 /* TeamsTableViewController.swift in Sources */,
+				B2513A9F1DD8ED3F009EED88 /* TeamsViewController.swift in Sources */,
+				B2513A091DD58F24009EED88 /* AppDelegate.swift in Sources */,
+				B2513AD51DDA4C97009EED88 /* Team.swift in Sources */,
+				B2B390561DDB9AD100C7F3AD /* MyPlayersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2513A151DD58F24009EED88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2513AA01DD8ED3F009EED88 /* TeamsViewController.swift in Sources */,
+				B2513A1E1DD58F24009EED88 /* NBA_Team_Selection_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2513A1B1DD58F24009EED88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2513A041DD58F24009EED88 /* NBA Team Selection App */;
+			targetProxy = B2513A1A1DD58F24009EED88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2513A0C1DD58F24009EED88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2513A0D1DD58F24009EED88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2513A111DD58F24009EED88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2513A121DD58F24009EED88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2513A201DD58F24009EED88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2513A211DD58F24009EED88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2513A231DD58F24009EED88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494E6AE7F0DA50274D794F3B /* Pods-NBA Team Selection App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NBA Team Selection App/NBA Team Selection App.entitlements";
+				DEVELOPMENT_TEAM = SK2ZM3X36D;
+				INFOPLIST_FILE = "NBA Team Selection App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antigravitystudios.NBA-Team-Selection-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2513A241DD58F24009EED88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8E916152206C1B0CC2F4F7 /* Pods-NBA Team Selection App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NBA Team Selection App/NBA Team Selection App.entitlements";
+				DEVELOPMENT_TEAM = SK2ZM3X36D;
+				INFOPLIST_FILE = "NBA Team Selection App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antigravitystudios.NBA-Team-Selection-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B2513A261DD58F24009EED88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C16FF5E99AC2D7FD5EC682 /* Pods-NBA Team Selection AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SK2ZM3X36D;
+				INFOPLIST_FILE = "NBA Team Selection AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antigravitystudios.NBA-Team-Selection-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBA Team Selection App.app/NBA Team Selection App";
+			};
+			name = Debug;
+		};
+		B2513A271DD58F24009EED88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F9455CD2659ABC792BABB8 /* Pods-NBA Team Selection AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SK2ZM3X36D;
+				INFOPLIST_FILE = "NBA Team Selection AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antigravitystudios.NBA-Team-Selection-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBA Team Selection App.app/NBA Team Selection App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2513A001DD58F24009EED88 /* Build configuration list for PBXProject "NBA Team Selection App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2513A201DD58F24009EED88 /* Debug */,
+				B2513A211DD58F24009EED88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2513A221DD58F24009EED88 /* Build configuration list for PBXNativeTarget "NBA Team Selection App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2513A231DD58F24009EED88 /* Debug */,
+				B2513A241DD58F24009EED88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2513A251DD58F24009EED88 /* Build configuration list for PBXNativeTarget "NBA Team Selection AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2513A261DD58F24009EED88 /* Debug */,
+				B2513A271DD58F24009EED88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B25139FD1DD58F24009EED88 /* Project object */;
+}
